@@ -6,7 +6,7 @@ purple='\e[0;35m'
 orange='\e[0;33m'
 NC='\e[0m'
 # // Exporting URL Host
-export Server_URL="raw.githubusercontent.com/NevermoreSSH/yourpath/main"
+export Server_URL="raw.githubusercontent.com/dilathedevilz/ravapath/main"
 clear
 if [[ -e /usr/local/bin/xray ]]; then
      echo ""
@@ -60,7 +60,7 @@ else
 	 echo ""
 	 sleep 1
 	 rm -rf /usr/local/sbin/helium
-	 wget -q -O /usr/local/sbin/helium https://raw.githubusercontent.com/NevermoreSSH/yourpath/main/helium.sh
+	 wget -q -O /usr/local/sbin/helium https://raw.githubusercontent.com/dilathedevilz/ravapath/main/helium.sh
 	 cd /usr/bin
 	 rm nf
 	 rm ins-helium
