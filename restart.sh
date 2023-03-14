@@ -65,7 +65,12 @@ res10() {
 res11() {
     systemctl restart xray@trojan.service
 }
-
+res12() {
+    systemctl restart xray@worryfree.service
+}
+res13() {
+    systemctl restart xray@grpc.service
+}
 clear
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;41;36m           RESTART SERVICE SERVER           \E[0m"
@@ -83,6 +88,10 @@ echo -e "  \033[1;91m Service Restart Vmess None TLS\033[1;37m"
 fun_bar 'res5'
 echo -e "  \033[1;91m Service Restart Vless TLS\033[1;37m"
 fun_bar 'res6'
+echo -e "  \033[1;91m Service Restart Vmess Worryfree\033[1;37m"
+fun_bar 'res12'
+echo -e "  \033[1;91m Service Restart Vmess Grpc\033[1;37m"
+fun_bar 'res13'
 echo -e "  \033[1;91m Service Restart Vless None TLS\033[1;37m"
 fun_bar 'res7'
 echo -e "  \033[1;91m Service Restart Trojan TLS\033[1;37m"

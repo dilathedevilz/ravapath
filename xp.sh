@@ -24,6 +24,8 @@ rm -f /usr/local/etc/xray/$user-tls.json /usr/local/etc/xray/$user-none.json /us
 rm -f /home/vps/public_html/$user-VMESSTLS.yaml /home/vps/public_html/$user-VMESSNTLS.yaml
 systemctl restart xray.service
 systemctl restart xray@none.service
+systemctl restart xray@worryfree.service
+systemctl restart xray@grpc.service
 fi
 done
 

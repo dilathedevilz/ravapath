@@ -1375,6 +1375,20 @@ systemctl enable xray.service
 systemctl start xray.service
 systemctl restart xray.service
 
+# enable xray vmess wf tls
+echo -e "[ ${green}OK${NC} ] Restarting Vmess WS"
+systemctl daemon-reload
+systemctl enable xray@worryfree.service
+systemctl start xray@worryfree.service
+systemctl restart xray@worryfree.service
+
+# enable xray vmess grpc tls
+echo -e "[ ${green}OK${NC} ] Restarting Vmess Grpc"
+systemctl daemon-reload
+systemctl enable xray@grpc.service
+systemctl start xray@grpc.service
+systemctl restart xray@grpc.service
+
 # enable xray vmess ws ntls
 systemctl daemon-reload
 systemctl enable xray@none.service

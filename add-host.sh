@@ -28,6 +28,8 @@ domain=$(cat /usr/local/etc/xray/domain)
 systemctl stop nginx
 systemctl stop xray.service
 systemctl stop xray@none.service
+systemctl restart xray@worryfree.service
+systemctl restart xray@grpc.service
 systemctl stop xray@vless.service
 systemctl stop xray@vnone.service
 systemctl stop xray@trojan.service
@@ -50,6 +52,8 @@ systemctl restart nginx
 systemctl restart xray.service
 systemctl restart xray@none.service
 systemctl restart xray@vless.service
+systemctl restart xray@worryfree.service
+systemctl restart xray@grpc.service
 systemctl restart xray@vnone.service
 systemctl restart xray@trojanws.service
 systemctl restart xray@trnone.service
