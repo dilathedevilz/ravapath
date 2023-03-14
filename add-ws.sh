@@ -118,6 +118,21 @@ cat> /usr/local/etc/xray/$user-none.json << EOF
       "tls": "none"
 }
 EOF
+cat> /usr/local/etc/xray/$user-worryfree.json << EOF
+      {
+      "v": "2",
+      "ps": "XRAY_VMESS_Worryfree_${user}",
+      "add": "${sts}${domain}",
+      "port": "80",
+      "id": "${uuid}",
+      "aid": "0",
+      "net": "ws",
+      "path": "/worryfree",
+      "type": "none",
+      "host": "${domain}",
+      "tls": "none"
+}
+EOF
 cat> /usr/local/etc/xray/$user-grpc.json << EOF
       {
       "v": "2",
